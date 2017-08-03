@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prevailhealth.tictactoe.GameActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:onClick="TriggerWin"
+        android:id="@+id/tableLayout">
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/place00"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check00"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <ImageView
+                android:id="@+id/place01"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check01"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <ImageView
+                android:id="@+id/place02"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check02"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="69dp" />
+        </TableRow>
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/place10"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check10"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <ImageView
+                android:id="@+id/place11"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check11"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <ImageView
+                android:id="@+id/place12"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check12"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="69dp" />
+        </TableRow>
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/place20"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check20"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <ImageView
+                android:id="@+id/place21"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check21"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <ImageView
+                android:id="@+id/place22"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:onClick="check22"
+                app:srcCompat="@drawable/empty"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="69dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:fontFamily="serif"
+        android:text="Player 1: X"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:layout_above="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:fontFamily="serif"
+        android:text="PLAYER 2: O"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

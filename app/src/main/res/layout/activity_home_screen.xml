@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prevailhealth.tictactoe.HomeScreen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/home_image"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <Button
+        android:id="@+id/start_game"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
+        android:text="Start"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="248dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="346dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/start_game"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
